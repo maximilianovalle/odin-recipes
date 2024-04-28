@@ -35,5 +35,5 @@ h2 {    /* type selector; heading 2 */
 }
 
 .imp { /* class selector: imp text */
-    font-weight: 100;
+    font-weight: 400;
 }
