@@ -1,39 +1,117 @@
-* { /* universal selector */
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    margin: 0px;                    /* removes white border around title box */
+    background: #F9F6F6;
+    font-family: Garamond, serif;
+    box-sizing: border-box;
 }
 
-h1, h2, h1 em, h2 em {    /* type selector; heading 1, heading 2, italicized headings */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.top {  /* SPACE top */
+    display: flex;
+    border-bottom: solid 2px;
+    border-color: #e2e0e0;
+    padding: 14px;
+    margin-bottom: 8px;
 }
 
-h1 {    /* type selector; heading 1 */
-    background-color: darkred;
-    text-align: center;
-    color: white;
-}
-
-.recipe {   /* class selector; heading 1 */
-    background-color: darkblue;
-}
-
-a { /* type selector; links */
-    color: darkred;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-h2 {    /* type selector; heading 2 */
-    color: darkblue;
-}
-
-.linked {   /* class selector; paragraphs in main page*/
+.left {   /* SPACE top left: title */
+    margin-left: 48px;
+    margin-right: auto;
     text-align: center;
 }
 
-.ingredients, .imp {    /* class selector: unorganized ingredients list, imp text */
-    color: darkred;
+.title {    /* TEXT title */
+    padding: 4px;
+    color: #656464;
+    font-size: 16px;
 }
 
-.imp { /* class selector: imp text */
-    font-weight: 400;
+.right { /*SPACE top right: buttons*/
+    margin-left: auto;
+    margin-right: 48px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.sign-in, .sign-up, .search-butt, .search-bar {    /* TEXT buttons, search bar */
+    color: #373636;
+    padding: 4px 8px;
+}
+
+.main-page {    /* SPACE main page */
+    margin: 0px 64px;
+    display: flex;
+}
+
+.mp-left, .mp-right {  /* SPACE main page left right: abt me */
+    width: 400px;
+    padding: 8px;
+}
+
+.selfie {
+    width: 360px;
+    border-radius: 5px;
+    border: 3px solid #e2e0e0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mp-right { /* SPACE main page right */
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.mp-left {  /* SPACE main page left */
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.abt-me {   /* TEXT abt me */
+    text-align: center;
+    color: #373636;
+}
+
+.mp-middle {    /* SPACE main page middle: links, search bar */
+    width: 880px;
+    padding: 8px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.search {   /* TEXT search bar */
+    margin-left: 308px;
+    margin-right: 308px;
+    margin-bottom: 24px;
+}
+
+.recipe {   /* TEXT links */
+    text-align: center;
+    margin: 8px;
+}
+
+.link { /* TEXT links */
+    background: #e2e0e0;
+    border-radius: 5px;
+    display: inline-block;  /* this */
+    width: 100%;            /* this */
+    height: 100%;           /* and this makes the link fit the entire div space so that :hover works properly */
+    color:#373636;
+    text-decoration: none;
+    padding: 4px 8px;
+}
+
+.link:hover {   /* TEXT links */
+    background: #656464;
+    color: #e2e0e0;
+}
+
+.middle-title { /* SPACE main page middle title */
+    text-align: center;
+    margin: 4px;
+    padding: 0px;
+}
+
+.mid-title {    /* TEXT middle title */
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-size: 32px;
 }
